@@ -1,0 +1,14 @@
+# invest-claude 는 표준 라이브러리만으로 동작합니다(오프라인 우선).
+# 아래는 모두 선택 사항이며, 설치하면 기능이 향상됩니다.
+
+# 실제 Claude LLM 으로 토론 (ANTHROPIC_API_KEY 필요)
+anthropic>=0.40
+
+# config.yaml 파싱 (없으면 코드 기본값 사용)
+pyyaml>=6.0
+
+# 보기 좋은 터미널 출력 (없으면 일반 print)
+rich>=13.0
+
+# 테스트 실행
+pytest>=7.0

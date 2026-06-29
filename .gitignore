@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 가상환경
+.venv/
+venv/
+env/
+
+# 환경 변수 (.env.example 은 커밋)
+.env
+
+# 모의 투자 상태 파일
+state/
+
+# OS / 에디터
+.DS_Store
+.idea/
+.vscode/

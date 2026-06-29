@@ -1,0 +1,17 @@
+# invest-claude 기본 설정
+# pyyaml 이 설치되어 있으면 이 파일을 읽습니다. 없으면 코드의 기본값을 사용합니다.
+# 환경 변수(INVEST_LLM, INVEST_MODEL, ANTHROPIC_API_KEY 등)가 이 값을 덮어씁니다.
+
+capital: 10000000        # 초기 자본(원)
+rounds: 2                # 토론 라운드 수
+model: claude-opus-4-8   # 실제 LLM 사용 시 Claude 모델 ID
+llm: auto                # auto | mock | anthropic  (auto: 키+패키지 있으면 실제 LLM)
+data_provider: mock      # mock | kis  (kis 는 추후 구현)
+broker: paper            # paper | kis  (현재 paper 만 실동작)
+
+# 포트폴리오 매니저의 가중 투표에 쓰이는 분석가별 가중치
+agent_weights:
+  강세론자: 1.0
+  약세론자: 1.0
+  기술적 분석가: 1.0
+  리스크 매니저: 1.2
